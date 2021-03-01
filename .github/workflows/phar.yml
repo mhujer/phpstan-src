@@ -28,7 +28,7 @@ jobs:
           tools: composer:v1
 
       - name: "Cache dependencies"
-        uses: "actions/cache@v2"
+        uses: "actions/cache@v2.1.4"
         with:
           path: "~/.composer/cache"
           key: "php-7.4-composer-${{ hashFiles('**/composer.json') }}"
